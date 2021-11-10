@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+
+	  <EnableDynamicLoading>true</EnableDynamicLoading>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ModelLibrary">
+      <HintPath>..\..\Task_03_11\ModelLibrary\obj\Debug\net5.0\ModelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectInterface">
+      <HintPath>..\..\Task_03_11\ProjectInterface\obj\Debug\net5.0\ProjectInterface.dll</HintPath>
+		<Private>false</Private>
+		<ExcludeAssets>runtime</ExcludeAssets>
+    </Reference>
+  </ItemGroup>
+
+</Project>
